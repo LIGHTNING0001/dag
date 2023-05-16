@@ -1,0 +1,162 @@
+desc,namespace,name,code,formula,factor_category_id,data_type,timeUnit,initStart,dataPhysicalTableId,jobType,dataPhysicalTableCode
+,stock.factor,一月内日收益平方和,day_r_square_sum_1m,"sum_t(Day_Yield^2,-1:0,MD)",,,,2018-01-01,,,barbeyond_store.aShare_funds
+,stock.factor,三月内日收益平方和,day_r_square_sum_3m,"sum_t(Day_Yield^2,-3:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六月内日收益平方和,day_r_square_sum_6m,"sum_t(Day_Yield^2,-6:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年内日收益平方和,day_r_square_sum_1y,"sum_t(Day_Yield^2,-1:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年内日收益平方和,day_r_square_sum_2y,"sum_t(Day_Yield^2,-2:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年内日收益平方和,day_r_square_sum_3y,"sum_t(Day_Yield^2,-3:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年内日收益平方和,day_r_square_sum_5y,"sum_t(Day_Yield^2,-5:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一整年日收益平方和,day_r_square_sum_1wy,"sum_t(Day_Yield^2,-1:0,WYD)",,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一整月日收益平方和,day_r_square_sum_1wm,"sum_t(Day_Yield^2,-1:0,WMD)",,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,成立以来日收益平方和,day_r_square_sum_sincetotal,"sum_t(Day_Yield^2,-inf:0,D)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一月内周收益平方和,week_r_square_sum_1m,"sum_t(Return_Weekly^2,-1:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三月内周收益平方和,week_r_square_sum_3m,"sum_t(Return_Weekly^2,-3:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六月内周收益平方和,week_r_square_sum_6m,"sum_t(Return_Weekly^2,-6:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年内周收益平方和,week_r_square_sum_1y,"sum_t(Return_Weekly^2,-1:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年内周收益平方和,week_r_square_sum_2y,"sum_t(Return_Weekly^2,-2:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年内周收益平方和,week_r_square_sum_3y,"sum_t(Return_Weekly^2,-3:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年内周收益平方和,week_r_square_sum_5y,"sum_t(Return_Weekly^2,-5:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一整年周收益平方和,week_r_square_sum_1wy,"sum_t(Return_Weekly^2,-1:0,WYD)",,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一整月周收益平方和,week_r_square_sum_1wm,"sum_t(Return_Weekly^2,-1:0,WMD)",,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,成立以来周收益平方和,week_r_square_sum_sincetotal,"sum_t(Return_Weekly^2,-inf:0,D)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一月内月收益平方和,month_r_square_sum_1m,"sum_t(Return_Monthly^2,-1:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三月内月收益平方和,month_r_square_sum_3m,"sum_t(Return_Monthly^2,-3:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六月内月收益平方和,month_r_square_sum_6m,"sum_t(Return_Monthly^2,-6:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年内月收益平方和,month_r_square_sum_1y,"sum_t(Return_Monthly^2,-1:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年内月收益平方和,month_r_square_sum_2y,"sum_t(Return_Monthly^2,-2:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年内月收益平方和,month_r_square_sum_3y,"sum_t(Return_Monthly^2,-3:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年内月收益平方和,month_r_square_sum_5y,"sum_t(Return_Monthly^2,-5:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一整年月收益平方和,month_r_square_sum_1wy,"sum_t(Return_Monthly^2,-1:0,WYD)",,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一整月月收益平方和,month_r_square_sum_1wm,"sum_t(Return_Monthly^2,-1:0,WMD)",,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,成立以来月收益平方和,month_r_square_sum_sincetotal,"sum_t(Return_Monthly^2,-inf:0,D)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一月内天数,count_d_1m,"count_t(1=1,-1:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三月内天数,count_d_3m,"count_t(1=1,-3:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六月内天数,count_d_6m,"count_t(1=1,-6:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年内天数,count_d_1y,"count_t(1=1,-1:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年内天数,count_d_2y,"count_t(1=1,-2:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年内天数,count_d_3y,"count_t(1=1,-3:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年内天数,count_d_5y,"count_t(1=1,-5:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一整年天数,count_d_1wy,"count_t(1=1,-1:0,WYD)",,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一整月天数,count_d_1wm,"count_t(1=1,-1:0,WMD)",,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,今年以来天数,count_d_sinceyear,"count_t(1=1,0BYD:0D,D)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,成立以来天数,count_d_sincetotal,"count_t(1=1,-inf:0,D)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一个月周度目标波动率,targetvol_weekly_1m,(week_r_square_sum_1m/(count_d_1m-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三个月周度目标波动率,targetvol_weekly_3m,(week_r_square_sum_3m/(count_d_3m-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六个月周度目标波动率,targetvol_weekly_6m,(week_r_square_sum_6m/(count_d_6m-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年周度目标波动率,targetvol_weekly_1y,(week_r_square_sum_1y/(count_d_1y-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年周度目标波动率,targetvol_weekly_2y,(week_r_square_sum_2y/(count_d_2y-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年周度目标波动率,targetvol_weekly_3y,(week_r_square_sum_3y/(count_d_3y-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年周度目标波动率,targetvol_weekly_5y,(week_r_square_sum_5y/(count_d_5y-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一年以来周度目标波动率,targetvol_weekly_wyd,(week_r_square_sum_1wy/(count_d_1wy-1))^0.5,,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一月以来周度目标波动率,targetvol_weekly_wmd,(week_r_square_sum_1wm/(count_d_1wm-1))^0.5,,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,一个月月度目标波动率,targetvol_monthly_1m,(month_r_square_sum_1m/(count_d_1m-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三个月月度目标波动率,targetvol_monthly_3m,(month_r_square_sum_3m/(count_d_3m-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六个月月度目标波动率,targetvol_monthly_6m,(month_r_square_sum_6m/(count_d_6m-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年月度目标波动率,targetvol_monthly_1y,(month_r_square_sum_1y/(count_d_1y-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年月度目标波动率,targetvol_monthly_2y,(month_r_square_sum_2y/(count_d_2y-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年月度目标波动率,targetvol_monthly_3y,(month_r_square_sum_3y/(count_d_3y-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年月度目标波动率,targetvol_monthly_5y,(month_r_square_sum_5y/(count_d_5y-1))^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一年以来月度目标波动率,targetvol_monthly_wyd,(month_r_square_sum_1wy/(count_d_1wy-1))^0.5,,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一月以来月度目标波动率,targetvol_monthly_wmd,(month_r_square_sum_1wm/(count_d_1wm-1))^0.5,,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,一个月年化日度收益率,annual_ret_daily_1m,"(g_avg_return_t(Day_Yield,-1:0,MD)+1)^250 - 1",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三个月年化日度收益率,annual_ret_daily_3m,"(g_avg_return_t(Day_Yield,-3:0,MD)+1)^250 - 1",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六个月年化日度收益率,annual_ret_daily_6m,"(g_avg_return_t(Day_Yield,-6:0,MD)+1)^250 - 1",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年年化日度收益率,annual_ret_daily_1y,"(g_avg_return_t(Day_Yield,-1:0,YD)+1)^250 - 1",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年年化日度收益率,annual_ret_daily_2y,"(g_avg_return_t(Day_Yield,-2:0,YD)+1)^250 - 1",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年年化日度收益率,annual_ret_daily_3y,"(g_avg_return_t(Day_Yield,-3:0,YD)+1)^250 - 1",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年年化日度收益率,annual_ret_daily_5y,"(g_avg_return_t(Day_Yield,-5:0,YD)+1)^250 - 1",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一年以来年化日度收益率,annual_ret_daily_wyd,"(g_avg_return_t(Day_Yield,-1:0,WYD)+1)^250 - 1",,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一月以来年化日度收益率,annual_ret_daily_wmd,"(g_avg_return_t(Day_Yield,-1:0,WMD)+1)^250 - 1",,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,一个月日度波动率,return_std_daily_1m,"std_t(Day_Yield,-1:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三个月日度波动率,return_std_daily_3m,"std_t(Day_Yield,-3:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六个月日度波动率,return_std_daily_6m,"std_t(Day_Yield,-6:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年日度波动率,return_std_daily_1y,"std_t(Day_Yield,-1:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年日度波动率,return_std_daily_2y,"std_t(Day_Yield,-2:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年日度波动率,return_std_daily_3y,"std_t(Day_Yield,-3:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年日度波动率,return_std_daily_5y,"std_t(Day_Yield,-5:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一年以来日度波动率,return_std_daily_wyd,"std_t(Day_Yield,-1:0,WYD)",,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一月以来日度波动率,return_std_daily_wmd,"std_t(Day_Yield,-1:0,WMD)",,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,一个月日度年化波动率,annual_return_std_daily_1m,return_std_daily_1m * 250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三个月日度年化波动率,annual_return_std_daily_3m,return_std_daily_3m * 250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六个月日度年化波动率,annual_return_std_daily_6m,return_std_daily_6m * 250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年日度年化波动率,annual_return_std_daily_1y,return_std_daily_1y * 250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年日度年化波动率,annual_return_std_daily_2y,return_std_daily_2y * 250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年日度年化波动率,annual_return_std_daily_3y,return_std_daily_3y * 250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年日度年化波动率,annual_return_std_daily_5y,return_std_daily_5y * 250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一年以来日度年化波动率,annual_return_std_daily_wyd,return_std_daily_wyd * 250^0.5,,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一月以来日度年化波动率,annual_return_std_daily_wmd,return_std_daily_wmd * 250^0.5,,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,一个月周度偏度,skewness_weekly_1m,"skew_t(Return_Weekly,-1:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三个月周度偏度,skewness_weekly_3m,"skew_t(Return_Weekly,-3:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六个月周度偏度,skewness_weekly_6m,"skew_t(Return_Weekly,-6:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年周度偏度,skewness_weekly_1y,"skew_t(Return_Weekly,-1:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年周度偏度,skewness_weekly_2y,"skew_t(Return_Weekly,-2:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年周度偏度,skewness_weekly_3y,"skew_t(Return_Weekly,-3:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年周度偏度,skewness_weekly_5y,"skew_t(Return_Weekly,-5:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一年以来周度偏度,skewness_weekly_wyd,"skew_t(Return_Weekly,-1:0,WYD)",,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一月以来周度偏度,skewness_weekly_wmd,"skew_t(Return_Weekly,-1:0,WMD)",,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,一个月日度峰度,kurtosis_daily_1m,"kurt_t(Day_Yield,-1:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三个月日度峰度,kurtosis_daily_3m,"kurt_t(Day_Yield,-3:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六个月日度峰度,kurtosis_daily_6m,"kurt_t(Day_Yield,-6:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年日度峰度,kurtosisr_daily_1y,"kurt_t(Day_Yield,-1:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年日度峰度,kurtosis_daily_2y,"kurt_t(Day_Yield,-2:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年日度峰度,kurtosis_daily_3y,"kurt_t(Day_Yield,-3:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年日度峰度,kurtosis_daily_5y,"kurt_t(Day_Yield,-5:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一年以来日度峰度,kurtosis_daily_wyd,"kurt_t(Day_Yield,-1:0,WYD)",,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一月以来日度峰度,kurtosis_daily_wmd,"kurt_t(Day_Yield,-1:0,WMD)",,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,1月内基金日收益,avg_day_yield_1m,"avg_t(Day_Yield,-1:0,MD)",,,,2023-03-01,,portfolio_factor,barbeyond_store.aShare_portfolios_fund
+,stock.factor,3月内基金日收益,avg_day_yield_3m,"avg_t(Day_Yield,-3:0,MD)",,,,2023-03-01,,portfolio_factor,barbeyond_store.aShare_portfolios_fund
+,stock.factor,6月内基金日收益,avg_day_yield_6m,"avg_t(Day_Yield,-6:0,MD)",,,,2023-03-01,,portfolio_factor,barbeyond_store.aShare_portfolios_fund
+,stock.factor,1年内基金日收益,avg_day_yield_1y,"avg_t(Day_Yield,-1:0,YD)",,,,2023-03-01,,portfolio_factor,barbeyond_store.aShare_portfolios_fund
+,stock.factor,2年内基金日收益,avg_day_yield_2y,"avg_t(Day_Yield,-2:0,YD)",,,,2023-03-01,,portfolio_factor,barbeyond_store.aShare_portfolios_fund
+,stock.factor,3年内基金日收益,avg_day_yield_3y,"avg_t(Day_Yield,-3:0,YD)",,,,2023-03-01,,portfolio_factor,barbeyond_store.aShare_portfolios_fund
+,stock.factor,5年内基金日收益,avg_day_yield_5y,"avg_t(Day_Yield,-5:0,YD)",,,,2023-03-01,,portfolio_factor,barbeyond_store.aShare_portfolios_fund
+,stock.factor,今年以来基金日收益,avg_day_yield_sinceyear,"avg_t(Day_Yield,0BYD:0D,D)",,,,2023-03-01,,portfolio_factor,barbeyond_store.aShare_portfolios_fund
+,stock.factor,成立以来基金日收益,avg_day_yield_sincetotal,"avg_t(Day_Yield,-inf:0,D)",,,,2023-03-01,,portfolio_factor,barbeyond_store.aShare_portfolios_fund
+,stock.factor,一个月年化周度收益率,annual_ret_weekly_1m,"(g_avg_return_t(Return_Weekly,-1PM:0D,PW)+1)^52- 1",,,,2023-03-01,,,barbeyond_store.aShare_private_funds
+,stock.factor,三个月年化周度收益率,annual_ret_weekly_3m,"(g_avg_return_t(Return_Weekly,-3PM:0D,PW)+1)^52 - 1",,,,2023-03-01,,,barbeyond_store.aShare_private_funds
+,stock.factor,六个月年化周度收益率,annual_ret_weekly_6m,"(g_avg_return_t(Return_Weekly,-6PM:0D,PW)+1)^52 - 1",,,,2023-03-01,,,barbeyond_store.aShare_private_funds
+,stock.factor,一年年化周度收益率,annual_ret_weekly_1y,"(g_avg_return_t(Return_Weekly,-1PY:0D,PW)+1)^52 - 1",,,,2023-03-01,,,barbeyond_store.aShare_private_funds
+,stock.factor,两年年化周度收益率,annual_ret_weekly_2y,"(g_avg_return_t(Return_Weekly,-2PY:0D,PW)+1)^52 - 1",,,,2023-03-01,,,barbeyond_store.aShare_private_funds
+,stock.factor,三年年化周度收益率,annual_ret_weekly_3y,"(g_avg_return_t(Return_Weekly,-3PY:0D,PW)+1)^52 - 1",,,,2023-03-01,,,barbeyond_store.aShare_private_funds
+,stock.factor,五年年化周度收益率,annual_ret_weekly_5y,"(g_avg_return_t(Return_Weekly,-5PY:0D,PW)+1)^52 - 1",,,,2023-03-01,,,barbeyond_store.aShare_private_funds
+,stock.factor,上一年以来年化周度收益率,annual_ret_weekly_wyd,"(g_avg_return_t(Return_Weekly,0BYD:0D,PW)+1)^52 - 1",,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一月以来年化周度收益率,annual_ret_weekly_wmd,"(g_avg_return_t(Return_Weekly,0BMD:0D,PW)+1)^52 - 1",,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,每日超额收益,excess_day_yield,Day_Yield-macro_cost_risk_free,,,,1996-03-01,,,barbeyond_store.aShare_private_funds
+,stock.factor,一月内平均超额日收益,avg_excess_day_yield_1m,"avg_t(excess_day_yield,-1:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三月内平均超额日收益,avg_excess_day_yield_3m,"avg_t(excess_day_yield,-3:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六月内平均超额日收益,avg_excess_day_yield_6m,"avg_t(excess_day_yield,-6:0,MD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年内平均超额日收益,avg_excess_day_yield_1y,"avg_t(excess_day_yield,-1:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年内平均超额日收益,avg_excess_day_yield_2y,"avg_t(excess_day_yield,-2:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年内平均超额日收益,avg_excess_day_yield_3y,"avg_t(excess_day_yield,-3:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年内平均超额日收益,avg_excess_day_yield_5y,"avg_t(excess_day_yield,-5:0,YD)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一整年平均超额日收益,avg_excess_day_yield_1wy,"avg_t(excess_day_yield,-1:0,WYD)",,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一整月平均超额日收益,avg_excess_day_yield_1wm,"avg_t(excess_day_yield,-1:0,WMD)",,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,成立以来平均超额日收益,avg_excess_day_yield_sincetotal,"avg_t(excess_day_yield,-inf:0,D)",,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一个月日度夏普比,sharpe_daily_1m,avg_excess_day_yield_1m/return_std_daily_1m,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三个月日度夏普比,sharpe_daily_3m,avg_excess_day_yield_3m/return_std_daily_3m,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六个月日度夏普比,sharpe_daily_6m,avg_excess_day_yield_6m/return_std_daily_6m,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年日度夏普比,sharpe_daily_1y,avg_excess_day_yield_1y/return_std_daily_1y,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年日度夏普比,sharpe_daily_2y,avg_excess_day_yield_2y/return_std_daily_2y,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年日度夏普比,sharpe_daily_3y,avg_excess_day_yield_3y/return_std_daily_3y,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年日度夏普比,sharpe_daily_5y,avg_excess_day_yield_5y/return_std_daily_5y,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一年以来日度夏普比,sharpe_daily_wyd,avg_excess_day_yield_1wy/return_std_daily_wyd,,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一月以来日度夏普比,sharpe_daily_wmd,avg_excess_day_yield_1wm/return_std_daily_wmd,,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,stock.factor,一个月日度年化夏普比,annual_sharpe_daily_1m,sharpe_daily_1m*250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三个月日度年化夏普比,annual_sharpe_daily_3m,sharpe_daily_3m*250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,六个月日度年化夏普比,annual_sharpe_daily_6m,sharpe_daily_6m*250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,一年日度年化夏普比,annual_sharpe_daily_1y,sharpe_daily_1y*250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,两年日度年化夏普比,annual_sharpe_daily_2y,sharpe_daily_2y*250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,三年日度年化夏普比,annual_sharpe_daily_3y,sharpe_daily_3y*250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,五年日度年化夏普比,annual_sharpe_daily_5y,sharpe_daily_5y*250^0.5,,,,2023-03-01,,,barbeyond_store.aShare_funds
+,stock.factor,上一年以来日度年化夏普比,annual_sharpe_daily_wyd,sharpe_daily_wyd*250^0.5,,,EYD,2000-01-01,,,barbeyond_store.aShare_funds_year
+,stock.factor,上一月以来日度年化夏普比,annual_sharpe_daily_wmd,sharpe_daily_wmd*250^0.5,,,EMD,2000-01-01,,,barbeyond_store.aShare_funds_month
+,index.factor,一个月日度Jenson阿尔法,alpha_daily_1m,"exposure_t(Day_Yield,[Return_Weekly],-1:0,MD,0)",,,,2023-03-01,,,barbeyond_store.aShare_benchmarks
+,index.factor,三个月日度Jenson阿尔法,alpha_daily_3m,"exposure_t(Day_Yield,[Return_Weekly],-3:0,MD,0)",,,,2023-03-01,,,barbeyond_store.aShare_benchmarks
+,index.factor,六个月日度Jenson阿尔法,alpha_daily_6m,"exposure_t(Day_Yield,[Return_Weekly],-6:0,MD,0)",,,,2023-03-01,,,barbeyond_store.aShare_benchmarks
+,index.factor,一年日度Jenson阿尔法,alpha_daily_1y,"exposure_t(Day_Yield,[Return_Weekly],-1:0,YD,0)",,,,2023-03-01,,,barbeyond_store.aShare_benchmarks
+,index.factor,两年日度Jenson阿尔法,alpha_daily_2y,"exposure_t(Day_Yield,[Return_Weekly],-2:0,YD,0)",,,,2023-03-01,,,barbeyond_store.aShare_benchmarks
+,index.factor,三年日度Jenson阿尔法,alpha_daily_3y,"exposure_t(Day_Yield,[Return_Weekly],-3:0,YD,0)",,,,2023-03-01,,,barbeyond_store.aShare_benchmarks
+,index.factor,五年日度Jenson阿尔法,alpha_daily_5y,"exposure_t(Day_Yield,[Return_Weekly],-5:0,YD,0)",,,,2023-03-01,,,barbeyond_store.aShare_benchmarks
+,index.factor,上一年以来日度Jenson阿尔法,alpha_daily_wyd,"exposure_t(Day_Yield,[Return_Weekly],-1:0,WYD,0)",,,EYD,2000-01-01,,,barbeyond_store.aShare_benchmarks_year
+,index.factor,上一月以来日度Jenson阿尔法,alpha_daily_wmd,"exposure_t(Day_Yield,[Return_Weekly],-1:0,WMD,0)",,,EMD,2000-01-01,,,barbeyond_store.aShare_benchmarks_month
+,index.factor,成立以来日度Jenson阿尔法,alpha_daily_sincetotal,"exposure_t(Day_Yield,[Return_Weekly],-inf:0,D,0)",,,,2023-03-01,,,barbeyond_store.aShare_benchmarks

@@ -1,0 +1,30 @@
+case_001:
+  title: "测试用例标题"
+  detail: ""
+  method: "get"
+  headers: '{"token": "c4ca4238a0b923820dcc509a6f75849b"}'
+  url: "http://192.168.0.100:42456/api/tof/estimate/nav?portfolioCode=tof&date=2023-03-12"
+  assert:
+    code: 200
+    value: "response"
+
+case_002:
+  title: 测试用例标题
+  detail:
+  method: get
+  headers: {"token": "c4ca4238a0b923820dcc509a6f75849b"}
+  url: http://192.168.0.100:42456/api/tof/estimate/nav?portfolioCode=tof&date=2023-03-12
+  value: $.value
+  assert:
+    code: 200
+    value: response
+
+case_003:
+  title: "测试用例标题"
+  detail: ""
+  method: "get"
+  headers: '{"token": "c4ca4238a0b923820dcc509a6f75849b"}'
+  url: "http://192.168.0.100:42456/api/tof/estimate/nav?portfolioCode=tof&date=2023-03-12"
+  assert:
+    code: 200
+    value: "response"
