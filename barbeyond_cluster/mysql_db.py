@@ -9,7 +9,7 @@ password = 'beifa888'
 db = pymysql.connect(host=host, port=port, user=username, password=password)
 cursor = db.cursor()
 
-#
+
 def insert_day_yield_to_result():
     path = '/home/betalpha/app/jar/cluster_server/data/cache/daily_factor/aShare_stocks_daily_factor/upload-zone/identity'
 
@@ -48,10 +48,10 @@ def insert_day_yield_to_result():
     cursor.close()
     db.close()
 
+
 # sparse factor add meta info
 def add_factor_meta():
-
-    sql = "insert into t_factor_meta(data_col_id, time_unit, create_user_id, update_user_id) " \
+    sql = "insert into barbeyond.t_factor_meta(data_col_id, time_unit, create_user_id, update_user_id) " \
           "select data_col_id, case when data_physical_table_id = 11 then 'EMD' " \
           "when data_physical_table_id = 12 then 'EYD' end as time_unit, 1, 1 from t_data_logic_table_col " \
           "where data_physical_table_id in (11, 12)"
@@ -64,7 +64,3 @@ def add_factor_meta():
 
 if __name__ == '__main__':
     add_factor_meta()
-
-
-
-

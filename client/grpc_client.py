@@ -71,6 +71,8 @@ def date_generate(start_date, end_date):
 
 if __name__ == '__main__':
 
+    engine.daily_factor.purify()
+
     # engine.daily_factor.upload_factor(
     #     table_name='aShare_bonds',
     #     factor_codes=["Fund_CNPF_Chara_Adj_NAV"],
@@ -91,63 +93,63 @@ if __name__ == '__main__':
     # print(result)
 
     # # # Fund_CNPF_Chara_Adj_NAVavg_excess_day_yield_5y
-    result = engine.daily_factor.query_daily_factor(
-        table_name="aShare_funds",
-        factor_codes=['positive_month_1m'],
-        start=date(2023, 4, 10),
-        end=date(2023, 5, 10),
-        securities=['000001_OF', '560002_OF', '590007_OF']
-    )
-    print(result)
+    # result = engine.daily_factor.query_daily_factor(
+    #     table_name="aShare_funds",
+    #     factor_codes=['positive_month_1m' ''],
+    #     start=date(2023, 4, 10),
+    #     end=date(2023, 5, 10),
+    #     securities=['000001_OF', '560002_OF', '590007_OF']
+    # )
+    # print(result)
 
-    sparse_data = engine.sparse.single_date.query_data_by_stock_and_offset(
-        table='aShare_funds_year',
-        stocks=['000001_OF', '560002_OF', '590007_OF'],
-        factor_cols=['count_d_1wy', 'abret_eyd'],
-        query_date=date(2022, 4, 1),
-        pre_offset=-1
-    )
-
-    print(sparse_data)
-
-    sparse_data = engine.sparse.single_date.query_data_by_stock_and_offset(
-        table='aShare_funds_month',
-        stocks=['000001_OF', '560002_OF', '590007_OF'],
-        factor_cols=['count_d_1wm'],
-        query_date=date(2023, 4, 30),
-        pre_offset=0
-    )
-
-    print(sparse_data)
-
-    v = engine.sparse.single_date.query_origin_data_by_stock_release_date(
-        table='aShare_funds_month',
-        stocks=['000001_OF'],
-        factor_cols=['count_d_1wm'],
-        from_date=date(2023, 1, 1),
-        to_date=date(2023, 5, 1),
-    )
-
-    print(v)
+    # sparse_data = engine.sparse.single_date.query_data_by_stock_and_offset(
+    #     table='aShare_funds_year',
+    #     stocks=['000001_OF', '560002_OF', '590007_OF'],
+    #     factor_cols=['count_d_1wy', 'abret_eyd'],
+    #     query_date=date(2022, 4, 1),
+    #     pre_offset=-1
+    # )
+    #
+    # print(sparse_data)
+    #
+    # sparse_data = engine.sparse.single_date.query_data_by_stock_and_offset(
+    #     table='aShare_funds_month',
+    #     stocks=['000001_OF', '560002_OF', '590007_OF'],
+    #     factor_cols=['count_d_1wm'],
+    #     query_date=date(2023, 4, 30),
+    #     pre_offset=0
+    # )
+    #
+    # print(sparse_data)
+    #
+    # v = engine.sparse.single_date.query_origin_data_by_stock_release_date(
+    #     table='aShare_funds_month',
+    #     stocks=['000001_OF'],
+    #     factor_cols=['count_d_1wm'],
+    #     from_date=date(2023, 1, 1),
+    #     to_date=date(2023, 5, 1),
+    # )
+    #
+    # print(v)
 
     # tradingDay = result['tradingDay'].tolist()
     #
     # excess_day_yield = result['excess_day_yield'].tolist()
     #
-    # result1 = engine.daily_factor.query_daily_factor(
-    #     table_name="aShare_funds",
-    #     factor_codes=['alpha_daily_1y', 'beta_daily_1y'],
-    #     start=date(2023, 4, 12),
-    #     end=date(2023, 4, 12),
-    #     securities=['000001_OF']
-    # )
-    # print(result1)
+    result1 = engine.daily_factor.query_daily_factor(
+        table_name="aShare_funds",
+        factor_codes=['Fund_CNPF_NAV_Return_SinceYear'],
+        start=date(2023, 5, 19),
+        end=date(2023, 5, 19),
+        securities=['000001_OF']
+    )
+    print(result1)
 
     result1 = engine.daily_factor.query_daily_factor(
         table_name="aShare_benchmarks",
-        factor_codes=['month_6m'],
-        start=date(2023, 5, 1),
-        end=date(2023, 5, 9),
+        factor_codes=['Fund_CNPF_NAV_Return_SinceYear'],
+        start=date(2023, 5, 19),
+        end=date(2023, 5, 19),
         securities=['idx_000906sh']
     )
     print(result1)
@@ -412,9 +414,12 @@ if __name__ == '__main__':
 
     net_like = engine.portfolio.floor_query_net_like(
         table_name="aShare_portfolios_fund",
-        portfolio_id="tof_case_18",
-        net_like_cols=["Fund_CNPF_Chara_Adj_NAV", "Fund_Day_Yield", "cash", "cashWeight"],
-        query_date=date(2022, 3, 14),
+        portfolio_id="ptflo_gs_0311_504",
+        net_like_cols=["Fund_CNPF_Chara_Adj_NAV", "Fund_Day_Yield", "cash", "cashWeight",
+                       "Fund_CNPF_NAV_Return_SinceYear", "Fund_CNPF_NAV_Return_1Y", "Fund_CNPF_NAV_Return_6M", "Fund_CNPF_NAV_Return_5Y",
+                       "Fund_CNPF_NAV_Return_3Y", "Fund_CNPF_NAV_Return_3M", "Fund_CNPF_NAV_Return_1W", "Fund_CNPF_NAV_Return_1M"],
+
+        query_date=date(2023, 5, 22),
     )
     print(net_like)
 

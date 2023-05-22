@@ -1,21 +1,25 @@
 from selenium.webdriver.common.by import By
 
-create_dag = (By.XPATH, '/html/body/div[1]/div/div[2]/div/div[1]/div[2]/div[3]/span/button/span')
+create_dag_item = (By.XPATH, '/html/body/div[1]/div/div[2]/div/div[1]/div[2]/div[3]/span/button/span')
 
 dag_name_ipt = (By.ID, 'saveDagForm_dagName')
 
-ack_dag = (By.XPATH, '/html/body/div[2]/div/div[2]/div/div[2]/div[2]/button[2]/span')
+ack_dag = (By.XPATH, '/html/body/div[2]/div/div[2]/div/div[2]/div[2]/button[2]')
 
 model_tab = (By.XPATH, '/html/body/div/div/div[1]/div[2]/ul/li[4]/span')
+
+run_dag = (By.XPATH, '/html/body/div/div/div[2]/div/div[1]/div[2]/div[2]/span/button')
 
 select_logo = (By.XPATH, '/html/body/div[1]/div/div[2]/div/div[1]/div[1]/div/span[2]')
 
 all = (By.XPATH, '/html/body/div[2]/div/div/div/div/div/div/div/div[3]/div/div')
 
+# /html/body/div/div/div[2]/div/div[1]/div[2]/div[1]/button
 look_btn = (By.XPATH, '/html/body/div/div/div[2]/div/div[1]/div[2]/div[1]/button')
 
 # 添加元数据节点
 add_meta_data = (By.XPATH, '/html/body/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/span/button')
+
 
 # 新建元数据节点
 new_meta_data = (By.XPATH, '/html/body/div[2]/div/div[2]/div/div[2]/div[1]/div/div/div/span/span')
@@ -28,13 +32,16 @@ default_category = (By.XPATH, '/html/body/div[4]/div/div/div/div/ul/li/div[1]')
 
 stock_tab = (By.XPATH, '/html/body/div[4]/div/div/div/div/ul[2]/li[2]/div[1]')
 
-stock_factor = (By.XPATH, '/html/body/div[4]/div/div/div/div/ul[3]/li[1]/div')
+# /html/body/div[3]/div/div/div/div/ul[3]/li[1]/div[1]
+stock_factor = (By.XPATH, '/html/body/div[4]/div/div/div/div/ul[3]/li[1]')
+
+stock_factor_1 = (By.XPATH, '/html/body/div[3]/div/div/div/div/ul[3]/li[1]/div[1]')
 
 # 物理表
 physical_table = (By.ID, 'saveDagForm_physicsTableCode')
 barbeyond_store = (By.XPATH, '/html/body/div[5]/div/div/div/div/ul/li/div[1]')
 stock_daily_factor = (By.XPATH, '/html/body/div[5]/div/div/div/div/ul[2]/li[2]')
-stock_month_factor = (By.XPATH, '/html/body/div[4]/div/div/div/div/ul[2]/li[11]')
+stock_month_factor = (By.XPATH, '/html/body/div[5]/div/div/div/div/ul[2]/li[11]')
 stock_year_factor = (By.XPATH, '/html/body/div[5]/div/div/div/div/ul[2]/li[12]')
 
 # 名称
@@ -50,6 +57,10 @@ submit_btn = (By.XPATH, '/html/body/div[3]/div/div[2]/div/div[2]/div[3]/button[2
 
 # 添加元素到dag 里面
 meta_data = (By.ID, 'saveDagForm_metaData')
+
+new_meta_data_1 = (By.XPATH, '/html/body/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/span/button')
+
+default_category_1 = (By.XPATH, '/html/body/div[4]/div/div/div/div/ul/li')
 
 stock_item = (By.XPATH, '/html/body/div[3]/div/div/div/div/ul[2]/li[2]/div[1]')
 

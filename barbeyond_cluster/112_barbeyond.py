@@ -1,37 +1,61 @@
 import datetime
 from datetime import date
 
+import pandas as pd
 from pandas import DataFrame
 from sdk.client_builder import create_grpc_sdk
 
+
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None)
+pd.set_option('expand_frame_repr', False)  # 当列太多时不自动换行
+
 username = 'admin'
 password = 'secret'
-host = '192.168.0.112'
-port = 50053
+# host = '192.168.0.114'
+# port = 50053
 
 # apex-stag1
-# host = '192.168.0.100'
-# port = 44968
+host = '192.168.0.100'
+port = 44968
+
+# 241
+
+# host = '192.168.194.241'
+# port = 50053
 
 engine = create_grpc_sdk(username=username, password=password, host=host, port=port)
 result = engine.daily_factor.query_daily_factor(
-        table_name="aShare_stocks_daily_factor",
-        factor_codes=['Day_Yield', 'd2'],
+        table_name="aShare_benchmarks",
+        factor_codes=['Fund_CNPF_Chara_Adj_NAV', 'Fund_Day_Yield'],
         start=date(2005, 1, 4),
-        end=date(2006, 3, 7),
-        securities=['000001']
+        end=date(2023, 2, 8),
+        securities=['idx_000001sh']
     )
 
-print(result.tail(20))
+print(result)
 
 
-bin = engine.daily_factor.purify_dry_run(
-    table_name="aShare_stocks_daily_factor",
-    factor_codes=["Return_Weekly_1"],
-    keep_count=1
-)
+result = engine.daily_factor.query_daily_factor(
+        table_name="aShare_funds",
+        factor_codes=['Fund_CNPF_Chara_Adj_NAV', 'Fund_Day_Yield'],
+        start=date(2005, 1, 4),
+        end=date(2023, 2, 8),
+        securities=['000001_OF']
+    )
 
-print(bin)
+print(result)
+
+
+
+
+# bin = engine.daily_factor.purify_dry_run(
+#     table_name="aShare_stocks_daily_factor",
+#     factor_codes=["Return_Weekly_1"],
+#     keep_count=1
+# )
+#
+# print(bin)
 #
 # all = engine.trading_day.query_all_trading_day("aShare_stocks_daily_factor")
 # print(all)
@@ -51,13 +75,13 @@ def date_generate(start_date, end_date):
     return date_list
 
 
-macro_value = engine.macro.query_by_days(
-        "aShare_index",
-        ["idx_000906sh"],
-        date_generate("2000-01-01", "2023-03-09")
-)
-
-print(macro_value)
+# macro_value = engine.macro.query_by_days(
+#         "aShare_macros",
+#         ['macro_cost_risk_free', 'FreeRisk_Interest_Monthly1'],
+#         date_generate("2000-01-01", "2023-03-09")
+# )
+#
+# print(macro_value)
 
 
 # username = 'admin'
@@ -73,7 +97,7 @@ print(macro_value)
 # )
 
 # single_date_sparse_client = engine.sparse.single_date
-# query_result = single_date_sparse_client.query_data_by_stock_and_offset("aShare_stocks_year", ["000001"], ['return_std_daily_wyd'],
+# query_result = single_date_sparse_client.query_data_by_stock_and_offset("aShare_stocks_year", ["000001"], ['sparse1'],
 #                                                                             date(2023, 2, 2), 0)
 # print(query_result)
 #
@@ -100,8 +124,8 @@ print(macro_value)
 # stock_unv = engine.universe.query_universe_by_date_range(
 #     "aShare_stocks_universe",
 #     "all_a_stock",
-#     from_date=date(2022, 1, 1),
-#     to_date=date(2023, 1, 1)
+#     from_date=date(2005, 1, 1),
+#     to_date=date(2022, 1, 1)
 # )
 #
 # print(stock_unv)
