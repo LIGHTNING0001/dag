@@ -12,4 +12,3 @@ login_password = (By.ID, 'login_password')
 
 login_submit = (By.XPATH, '/html/body/div/div/div/div[2]/form/div[3]/div/div/div/div/button')
 
-

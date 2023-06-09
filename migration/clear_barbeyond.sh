@@ -7,7 +7,7 @@ find . -type d -name 'basic_day_*' -exec rm -rf {} \;
 find . -type d -name 'beta_*' -exec rm -rf {} \;
 find . -type d -name 'count_*' -exec rm -rf {} \;
 find . -type d -name 'cummul_*' -exec rm -rf {} \;
-find . -type d -name 'day_r*' -exec rm -rf {} \;
+find . -type d -name 'day_r_square*' -exec rm -rf {} \;
 find . -type d -name 'delete_*' -exec rm -rf {} \;
 find . -type d -name 'downrisk*' -exec rm -rf {} \;
 find . -type d -name 'downward*' -exec rm -rf {} \;

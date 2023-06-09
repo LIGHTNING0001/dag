@@ -24,9 +24,9 @@ password = 'secret'
 url = 'http://192.168.0.114/login'
 driver_path = '/Users/mac/PycharmProjects/dag_v2_test/driver/chromedriver'
 
-dag_name = 'backing_test'
+dag_name = 'sparse'
 
-df = pd.read_excel('cluster_factor_v1.xlsx')
+df = pd.read_excel('cluster_factor_v2.xlsx')
 
 items = []
 n = len(df)
@@ -74,17 +74,19 @@ def sign_in():
 
 def add_data_meta():
 
+    time.sleep(10)
+
     model_tab_btn = driver.find_element(*model_tab)
     model_tab_btn.click()
     driver.implicitly_wait(20)
 
     create_dag_btn = driver.find_element(*create_dag_item)
     create_dag_btn.click()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
 
     dag_name_input = driver.find_element(*dag_name_ipt)
     dag_name_input.send_keys(dag_name)
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
 
     ack_dag_btn = driver.find_element(*ack_dag)
     ack_dag_btn.click()
@@ -108,17 +110,19 @@ def add_data_meta():
     add_meta_data_btn.click()
     time.sleep(1)
 
-    for i in range(854, n):
+    for i in range(18, n):
 
         print(items[i][0])
 
-        if items[i][3] == 'EMD' or items[i][3] == 'EYD':
+        if items[i][3] == 'nan':
             continue
+
+        driver.implicitly_wait(10)
 
         new_meta_data_btn = driver.find_element(*new_meta_data)
         new_meta_data_btn.click()
 
-        time.sleep(1)
+        driver.implicitly_wait(10)
 
         namespace = driver.find_element(*namespace_input)
         namespace.click()
@@ -169,10 +173,12 @@ def add_data_meta():
         my_action = ActionChains(driver).send_keys_to_element(formula_input, items[i][2]).perform()
         driver.implicitly_wait(10)
 
+        time.sleep(1)
+
         submit_btn_input = driver.find_element(*submit_btn)
         submit_btn_input.click()
 
-        time.sleep(1)
+        time.sleep(2)
 
 
 def create_dag():
@@ -242,5 +248,5 @@ def create_dag():
 
 if __name__ == '__main__':
     sign_in()
-    # add_data_meta()
-    create_dag()
+    add_data_meta()
+    # create_dag()

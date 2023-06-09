@@ -18,15 +18,15 @@ password = 'beifa888'
 db = pymysql.connect(host=host, port=port, user=username, password=password)
 cursor = db.cursor()
 
-# sql = "select code from barbeyond.t_data_logic_table_col where full_code like 'stock.factor%' and data_physical_table_id = 12"
-#
-# cursor.execute(sql)
-# result_set = cursor.fetchall()
-# codes = []
-# for item in result_set:
-#     codes.append(item[0])
-#
-# engine.sparse.single_date.create_table('aShare_stocks_year', codes)
+sql = "select code from barbeyond.t_data_logic_table_col where full_code like 'stock.factor%' and data_physical_table_id = 12"
+
+cursor.execute(sql)
+result_set = cursor.fetchall()
+codes = []
+for item in result_set:
+    codes.append(item[0])
+
+engine.sparse.single_date.create_table('aShare_stocks_year', codes)
 
 
 sql = "select code from barbeyond.t_data_logic_table_col where full_code like 'stock.factor%' and data_physical_table_id = 11"

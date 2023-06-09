@@ -1,0 +1,131 @@
+desc,namespace,name,code,formula,factor_category_id,data_type,timeUnit,initStart,dataPhysicalTableId,jobType,dataPhysicalTableCode
+,stock.factor,上一整年天数,count_d_1wy,"count_t(1=1,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+,stock.factor,上一整月天数,count_d_1wm,"count_t(1=1,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日收益平方和,day_r_square_sum_1wy,"sum_t(Day_Yield^2,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+,stock.factor,上一整月日收益平方和,day_r_square_sum_1wm,"sum_t(Day_Yield^2,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月收益平方和,month_r_square_sum_1wy,"sum_t(Return_Monthly1^2,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+,stock.factor,上一整月月收益平方和,month_r_square_sum_1wm,"sum_t(Return_Monthly1^2,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年平均超额日收益,avg_excess_day_yield_1wy,"avg_t(excess_day_yield,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+,stock.factor,上一整月平均超额日收益,avg_excess_day_yield_1wm,"avg_t(excess_day_yield,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年平均超额周收益,avg_excess_week_yield_1wy,"avg_t(excess_week_yield,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+,stock.factor,上一整月平均超额周收益,avg_excess_week_yield_1wm,"avg_t(excess_week_yield,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年平均超额月收益,avg_excess_month_yield_1wy,"avg_t(excess_month_yield,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+,stock.factor,上一整月平均超额月收益,avg_excess_month_yield_1wm,"avg_t(excess_month_yield,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年平均超基准日收益,avg_excess_day_yield_1wy_basic,"avg_t(excess_day_yield_basic,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+,stock.factor,上一整月平均超基准日收益,avg_excess_day_yield_1wm_basic,"avg_t(excess_day_yield_basic,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年平均超基准周收益,avg_excess_week_yield_1wy_basic,"avg_t(excess_week_yield_basic,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+,stock.factor,上一整月平均超基准周收益,avg_excess_week_yield_1wm_basic,"avg_t(excess_week_yield_basic,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年平均超基准月收益,avg_excess_month_yield_1wy_basic,"avg_t(excess_month_yield_basic,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+,stock.factor,上一整月平均超基准月收益,avg_excess_month_yield_1wm_basic,"avg_t(excess_month_yield_basic,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+,stock.factor,一整年基金累积收益,cummul_fund_return_1wy,"cummul_t(Day_Yield,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+,stock.factor,一整月基金累积收益,cummul_fund_return_1wm,"cummul_t(Day_Yield,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年年化日度收益率,annual_ret_daily_wyd,"(g_avg_return_t(Day_Yield,-1:0,WYD)+1)^250 - 1",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月年化日度收益率,annual_ret_daily_wmd,"(g_avg_return_t(Day_Yield,-1:0,WMD)+1)^250 - 1",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年年化周度收益率,annual_ret_weekly_wyd,"(g_avg_return_t(Return_Weekly1,-1BYD:0EYD,PW)+1)^52 - 1",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月年化周度收益率,annual_ret_weekly_wmd,"(g_avg_return_t(Return_Weekly1,-1BMD:0EMD,PW)+1)^52 - 1",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年年化月度收益率,annual_ret_monthly_wyd,"(g_avg_return_t(Return_Monthly1,-1BYD:0EYD,PM)+1)^12 - 1",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月年化月度收益率,annual_ret_monthly_wmd,"(g_avg_return_t(Return_Monthly1,-1BMD:0EMD,PM)+1)^12 - 1",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+,private_fund.factor,一整年基金基准收益,cummul_basic_return_1wy,"cummul_t(basic_day_r_aid,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.private_funds_year
+,private_fund.factor,一整月基金基准收益,cummul_basic_return_1wm,"cummul_t(basic_day_r_aid,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.private_funds_month
+1,stock.factor,上一整年相对超额收益,relexcess_ret_wyd,(cummul_fund_return_1wy+1)/(cummul_basic_return_1wy+1) - 1,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月相对超额收益,relexcess_ret_wmd,(cummul_fund_return_1wm+1)/(cummul_basic_return_1wm+1) - 1,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度阿尔法,alpha_daily_wyd,"exposure_t(excess_day_yield,[Index_Return - macro_cost_risk_free],-1:0,WYD,0)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度阿尔法,alpha_daily_wmd,"exposure_t(excess_day_yield,[Index_Return - macro_cost_risk_free],-1:0,WMD,0)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度阿尔法,alpha_weekly_wyd,"exposure_t(excess_week_yield,[Index_Return_Weekly1 - FreeRisk_Interest_Weekly],-1:0,WYD,0)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度阿尔法,alpha_weekly_wmd,"exposure_t(excess_week_yield,[Index_Return_Weekly1 - FreeRisk_Interest_Weekly],-1:0,WMD,0)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度阿尔法,alpha_monthly_wyd,"exposure_t(excess_month_yield,[Index_Return_Monthly1 - FreeRisk_Interest_Monthly],-1:0,WYD,0)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度阿尔法,alpha_monthly_wmd,"exposure_t(excess_month_yield,[Index_Return_Monthly1 - FreeRisk_Interest_Monthly],-1:0,WMD,0)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度贝塔,beta_daily_wyd,"exposure_t(excess_day_yield,[Index_Return-macro_cost_risk_free],-1:0,WYD,1)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度贝塔,beta_daily_wmd,"exposure_t(excess_day_yield,[Index_Return-macro_cost_risk_free],-1:0,WMD,1)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度贝塔,beta_weekly_wyd,"exposure_t(excess_week_yield,[Index_Return_Weekly1-FreeRisk_Interest_Weekly],-1:0,WYD,1)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度贝塔,beta_weekly_wmd,"exposure_t(excess_week_yield,[Index_Return_Weekly1-FreeRisk_Interest_Weekly],-1:0,WMD,1)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度贝塔,beta_monthly_wyd,"exposure_t(excess_month_yield,[Index_Return_Monthly1-FreeRisk_Interest_Monthly],-1:0,WYD,1)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度贝塔,beta_monthly_wmd,"exposure_t(excess_month_yield,[Index_Return_Monthly1-FreeRisk_Interest_Monthly],-1:0,WMD,1)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度Jenson阿尔法,alpha_weekly_wyd_jenson,alpha_weekly_wyd,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度Jenson阿尔法,alpha_weekly_wmd_jenson,alpha_weekly_wmd,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度Jenson阿尔法,alpha_monthly_wyd_jenson,alpha_monthly_wyd,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度Jenson阿尔法,alpha_monthly_wmd_jenson,alpha_monthly_wmd,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度波动率,return_std_daily_wyd,"std_t(Day_Yield,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度波动率,return_std_daily_wmd,"std_t(Day_Yield,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度波动率,return_std_weekly_wyd,"std_t(Return_Weekly1,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度波动率,return_std_weekly_wmd,"std_t(Return_Weekly1,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度波动率,return_std_monthly_wyd,"std_t(Return_Monthly1,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度波动率,return_std_monthly_wmd,"std_t(Return_Monthly1,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度年化波动率,annual_return_std_daily_wyd,return_std_daily_wyd * 250^0.5,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度年化波动率,annual_return_std_daily_wmd,return_std_daily_wmd * 250^0.5,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度年化波动率,annual_return_std_weekly_wyd,return_std_weekly_wyd * 52^0.5,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度年化波动率,annual_return_std_weekly_wmd,return_std_weekly_wmd * 52^0.5,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度年化波动率,annual_return_std_monthly_wyd,return_std_monthly_wyd * 12^0.5,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度年化波动率,annual_return_std_monthly_wmd,return_std_monthly_wmd * 12^0.5,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度目标波动率,targetvol_daily_wyd,(day_r_square_sum_1wy/(count_d_1wy-1))^0.5,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度目标波动率,targetvol_daily_wmd,(day_r_square_sum_1wm/(count_d_1wm-1))^0.5,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度目标波动率,targetvol_weekly_wyd,(week_r_square_sum_1wy/(count_d_1wy-1))^0.5,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度目标波动率,targetvol_weekly_wmd,(week_r_square_sum_1wm/(count_d_1wm-1))^0.5,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度目标波动率,targetvol_monthly_wyd,(month_r_square_sum_1wy/(count_d_1wy-1))^0.5,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度目标波动率,targetvol_monthly_wmd,(month_r_square_sum_1wm/(count_d_1wm-1))^0.5,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度下行波动率,downrisk_daily_wyd,"std_t(negative_day_yield_pick,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度下行波动率,downrisk_daily_wmd,"std_t(negative_day_yield_pick,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度下行波动率,downrisk_weekly_wyd,"std_t(negative_week_yield_pick,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度下行波动率,downrisk_weekly_wmd,"std_t(negative_week_yield_pick,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度下行波动率,downrisk_monthly_wyd,"std_t(negative_month_yield_pick,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度下行波动率,downrisk_monthly_wmd,"std_t(negative_month_yield_pick,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度在险价值,var_daily_wyd,"quantile_t(Day_Yield,-1:0,WYD,5,inter,inc)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度在险价值,var_daily_wmd,"quantile_t(Day_Yield,-1:0,WMD,5,inter,inc)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度在险价值,var_weekly_wyd,"quantile_t(Return_Weekly1,-1:0,WYD,5,inter,inc)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度在险价值,var_weekly_wmd,"quantile_t(Return_Weekly1,-1:0,WMD,5,inter,inc)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度在险价值,var_monthly_wyd,"quantile_t(Return_Monthly1,-1:0,WYD,5,inter,inc)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度在险价值,var_monthly_wmd,"quantile_t(Return_Monthly1,-1:0,WMD,5,inter,inc)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度夏普比,sharpe_daily_wyd,avg_excess_day_yield_1wy/return_std_daily_wyd,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度夏普比,sharpe_daily_wmd,avg_excess_day_yield_1wm/return_std_daily_wmd,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度夏普比,sharpe_weekly_wyd,avg_excess_week_yield_1wy/return_std_weekly_wyd,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度夏普比,sharpe_weekly_wmd,avg_excess_week_yield_1wm/return_std_weekly_wmd,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度夏普比,sharpe_monthly_wyd,avg_excess_month_yield_1wy/return_std_monthly_wyd,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度夏普比,sharpe_monthly_wmd,avg_excess_month_yield_1wm/return_std_monthly_wmd,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度年化夏普比,annual_sharpe_daily_wyd,sharpe_daily_wyd*250^0.5,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度年化夏普比,annual_sharpe_daily_wmd,sharpe_daily_wmd*250^0.5,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度年化夏普比,annual_sharpe_weekly_wyd,sharpe_weekly_wyd*52^0.5,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度年化夏普比,annual_sharpe_weekly_wmd,sharpe_weekly_wmd*52^0.5,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度年化夏普比,annual_sharpe_monthly_wyd,sharpe_monthly_wyd*12^0.5,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度年化夏普比,annual_sharpe_monthly_wmd,sharpe_monthly_wmd*12^0.5,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度索提诺比率,sotino_daily_wyd,avg_excess_day_yield_1wy/downrisk_daily_wyd,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度索提诺比率,sotino_daily_wmd,avg_excess_day_yield_1wm/downrisk_daily_wmd,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度索提诺比率,sotino_weekly_wyd,avg_excess_week_yield_1wy/downrisk_weekly_wyd,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度索提诺比率,sotino_weekly_wmd,avg_excess_week_yield_1wm/downrisk_weekly_wmd,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度索提诺比率,sotino_monthly_wyd,avg_excess_month_yield_1wy/downrisk_monthly_wyd,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度索提诺比率,sotino_monthly_wmd,avg_excess_month_yield_1wm/downrisk_monthly_wmd,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度偏度,skewness_daily_wyd,"skew_t(Day_Yield,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度偏度,skewness_daily_wmd,"skew_t(Day_Yield,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度偏度,skewness_weekly_wyd,"skew_t(Return_Weekly1,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度偏度,skewness_weekly_wmd,"skew_t(Return_Weekly1,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度偏度,skewness_monthly_wyd,"skew_t(Return_Monthly1,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度偏度,skewness_monthly_wmd,"skew_t(Return_Monthly1,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度峰度,kurtosis_daily_wyd,"kurt_t(Day_Yield,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度峰度,kurtosis_daily_wmd,"kurt_t(Day_Yield,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度峰度,kurtosis_monthly_wyd,"kurt_t(Return_Monthly1,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度峰度,kurtosis_monthly_wmd,"kurt_t(Return_Monthly1,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度跟踪误差,trackingerror_monthly_wyd,"std_t(excess_month_yield_basic,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度跟踪误差,trackingerror_monthly_wmd,"std_t(excess_month_yield_basic,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度信息比率,inforatio_weekly_wyd,avg_excess_week_yield_1wy_basic/trackingerror_weekly_wyd,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度信息比率,inforatio_weekly_wmd,avg_excess_week_yield_1wm_basic/trackingerror_weekly_wmd,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度信息比率,inforatio_monthly_wyd,avg_excess_month_yield_1wy_basic/trackingerror_monthly_wyd,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度信息比率,inforatio_monthly_wmd,avg_excess_month_yield_1wm_basic/trackingerror_monthly_wmd,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度阿尔法,alpha_daily_wyd,"exposure_t(excess_day_yield,[Index_Return - macro_cost_risk_free],-1:0,WYD,0)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度阿尔法,alpha_daily_wmd,"exposure_t(excess_day_yield,[Index_Return - macro_cost_risk_free],-1:0,WMD,0)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度阿尔法,alpha_weekly_wyd,"exposure_t(excess_week_yield,[Index_Return_Weekly1 - FreeRisk_Interest_Weekly],-1:0,WYD,0)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度阿尔法,alpha_weekly_wmd,"exposure_t(excess_week_yield,[Index_Return_Weekly1 - FreeRisk_Interest_Weekly],-1:0,WMD,0)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度阿尔法,alpha_monthly_wyd,"exposure_t(excess_month_yield,[Index_Return_Monthly1 - FreeRisk_Interest_Monthly],-1:0,WYD,0)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度阿尔法,alpha_monthly_wmd,"exposure_t(excess_month_yield,[Index_Return_Monthly1 - FreeRisk_Interest_Monthly],-1:0,WMD,0)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度贝塔,beta_daily_wyd,"exposure_t(excess_day_yield,[Index_Return-macro_cost_risk_free],-1:0,WYD,1)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度贝塔,beta_daily_wmd,"exposure_t(excess_day_yield,[Index_Return-macro_cost_risk_free],-1:0,WMD,1)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度贝塔,beta_weekly_wyd,"exposure_t(excess_week_yield,[Index_Return_Weekly1-FreeRisk_Interest_Weekly],-1:0,WYD,1)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度贝塔,beta_weekly_wmd,"exposure_t(excess_week_yield,[Index_Return_Weekly1-FreeRisk_Interest_Weekly],-1:0,WMD,1)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度贝塔,beta_monthly_wyd,"exposure_t(excess_month_yield,[Index_Return_Monthly1-FreeRisk_Interest_Monthly],-1:0,WYD,1)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度贝塔,beta_monthly_wmd,"exposure_t(excess_month_yield,[Index_Return_Monthly1-FreeRisk_Interest_Monthly],-1:0,WMD,1)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年最大回撤,maxdrawdown_wyd,"max_drawdown_t(Day_Yield,-1:0,WYD)",,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月最大回撤,maxdrawdown_wmd,"max_drawdown_t(Day_Yield,-1:0,WMD)",,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年日度卡玛比率,kalmar_daily_wyd,avg_excess_day_yield_1wy/maxdrawdown_wyd,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月日度卡玛比率,kalmar_daily_wmd,avg_excess_day_yield_1wm/maxdrawdown_wmd,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年周度卡玛比率,kalmar_weekly_wyd,avg_excess_week_yield_1wy/maxdrawdown_wyd,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月周度卡玛比率,kalmar_weekly_wmd,avg_excess_week_yield_1wm/maxdrawdown_wmd,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month
+1,stock.factor,上一整年月度卡玛比率,kalmar_monthly_wyd,avg_excess_month_yield_1wy/maxdrawdown_wyd,,,EYD,2000/1/1,,,barbeyond_store.aShare_benchmarks_year
+1,stock.factor,上一整月月度卡玛比率,kalmar_monthly_wmd,avg_excess_month_yield_1wm/maxdrawdown_wmd,,,EMD,2000/1/1,,,barbeyond_store.aShare_benchmarks_month

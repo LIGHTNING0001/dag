@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>五子棋</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .board {
+            background-color: #ffb74d;
+            border: 2px solid #795548;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            width: 500px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+            grid-template-rows: repeat(15, 1fr);
+        }
+
+        .board .cell {
+            border: 1px solid #795548;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="board">
+            <!-- 生成棋盘格子 -->
+            <!-- 使用data-row和data-col属性存储行列信息 -->
+            <!-- 可以在每个格子上绑定点击事件来处理下棋操作 -->
+            <!-- 这里只是示例，未包含下棋的逻辑 -->
+            <!-- 您可以使用JavaScript来处理下棋操作 -->
+            <!-- 注意：这只是一个静态的展示棋盘的示例，没有包含完整的游戏逻辑 -->
+            <!-- 如果您想实现一个完整的五子棋游戏，还需要使用JavaScript编写相关的逻辑 -->
+            <!-- 例如，处理落子、判断胜负等 -->
+            <!-- 这里仅提供了一个美观的棋盘展示 -->
+            <div class="cell" data-row="0" data-col="0"></div>
+            <div class="cell" data-row="0" data-col="1"></div>
+            <!-- 其他格子... -->
+        </div>
+    </div>
+</body>
+</html>
